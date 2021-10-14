@@ -39,7 +39,7 @@ saveButton.on('click', function() {
   colorCode()
 
   function colorCode() {
-    let currentTime = moment().format('h')
+    let currentTime = moment().format('H')
     let timeContainer = $(".time")
 
     timeContainer.each(function() {
@@ -47,19 +47,23 @@ saveButton.on('click', function() {
 
       if (timeBlockTime < currentTime) {
         $(this).attr("id", "past")
-        return
+        console.log("past")
+        
       } else if (timeBlockTime === currentTime) {
         $(this).attr("id", "present")
-        return
+        console.log("present")
       } else if (timeBlockTime > currentTime) {
         $(this).attr("id", "future")
-        return
+        console.log("future")
       }
+    
+      console.log(currentTime)
       
-      console.log(currentTime, timeBlockTime)
     }
     )
     
   }
+  
+  
 
   
