@@ -1,4 +1,4 @@
-console.log(moment().subtract(10, 'days').calendar())
+
 
 let displayDate = $("#display-date")
 let saveButton = $(".save-button")
@@ -6,12 +6,8 @@ let inputContainer = $(".input-container")
 let description = $(".description")
 
 
-displayDate.html(moment().subtract(10, 'days').calendar())
+displayDate.html(moment().format("MMM Do YYYY"))
 
-
-// saveButton.on("click", function () {
-    
-// })
 
 saveButton.on('click', function() {
     let description = $(this).parent("div").siblings(".input-container").children(".description").val()
@@ -39,3 +35,31 @@ saveButton.on('click', function() {
     localStorage.clear()
     location.reload(true)
   })
+
+  colorCode()
+
+  function colorCode() {
+    let currentTime = moment().format('h')
+    let timeContainer = $(".time")
+
+    timeContainer.each(function() {
+      let timeBlockTime = $(this).attr("name")
+
+      if (timeBlockTime < currentTime) {
+        $(this).attr("id", "past")
+        return
+      } else if (timeBlockTime === currentTime) {
+        $(this).attr("id", "present")
+        return
+      } else if (timeBlockTime > currentTime) {
+        $(this).attr("id", "future")
+        return
+      }
+      
+      console.log(currentTime, timeBlockTime)
+    }
+    )
+    
+  }
+
+  
