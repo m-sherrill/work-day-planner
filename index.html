@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <header class="jumbotron" id="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead" id="display-date"></p>
+  </header>
+  <main>
+    <div class="container">
+      <!-- Key Row -->
+      <div class="row">
+        Past: Present: Future:
+      </div>
+      <!-- row 8am -->
+      <div class="row">
+        <div class="col-2 time">
+          8:00 AM
+        </div>
+        <div class="input-container col-7"><textarea class="description" id="hour8" rows="4"></textarea></div>
+        <div class="col-3" id="save-container">
+          <button class="save-button" name="8am-btn">save</button>
+
+        </div>
+      </div>
+      <!-- row 9am -->
+      <div class="row">
+        <div class="col-2 time">
+          9:00 AM
+        </div>
+        <div class="input-container col-7"><textarea class="description" id="hour9" rows="4"></textarea></div>
+        <div class="col-3" id="save-container">
+          <button class="save-button" name="9am-btn">save</button>
+
+        </div>
+      </div>
+      <!-- row 10am -->
+      <div class="row">
+        <div class="col-2 time">
+          10:00 AM
+        </div>
+        <div class="input-container col-7">
+          <button class="add-new-item" id="new-item-btn" name="1pm-input">Add New Item</button>
+        </div>
+        <div class="col-3" id="save-container">
+          <button class="save-button" name="onepmbtn">save</button>
+
+        </div>
+      </div>
+      <!-- row 11am -->
+      <div class="row">
+        <div class="col-2 time">
+          11:00 AM
+        </div>
+        <div class="input-container col-7">
+          <button class="add-new-item" id="new-item-btn" name="1pm-input">Add New Item</button>
+        </div>
+        <div class="col-3" id="save-container">
+          <button class="save-button" name="onepmbtn">save</button>
+
+        </div>
+      </div>
+      <!-- row 12pm -->
+      <div class="row">
+        <div class="col-2 time">
+          12:00 PM
+        </div>
+        <div class="input-container col-7">
+          <button class="add-new-item" id="new-item-btn" name="1pm-input">Add New Item</button>
+        </div>
+        <div class="col-3" id="save-container">
+          <button class="save-button" name="onepmbtn">save</button>
+
+        </div>
+      </div>
+      <!-- row 1pm -->
+      <div class="row">
+        <div class="col-2 time">
+          1 PM
+        </div>
+        <div class="input-container col-7">
+          <button class="add-new-item" id="new-item-btn" name="1pm-input">Add New Item</button>
+        </div>
+        <div class="col-3" id="save-container">
+          <button class="save-button" name="onepmbtn">save</button>
+
+        </div>
+      </div>
+      <!-- row 2pm -->
+      <div class="row">
+        <div class="col-2 time">
+          1 PM
+        </div>
+        <div class="input-container col-7">
+          <button class="add-new-item" id="new-item-btn" name="1pm-input">Add New Item</button>
+        </div>
+        <div class="col-3" id="save-container">
+          <button class="save-button" name="onepmbtn">save</button>
+
+        </div>
+      </div>
+
+      <!-- row 3pm-->
+
+      <!-- row 4pm -->
+
+      <!-- row 5pm -->
+
+    </div>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
