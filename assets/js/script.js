@@ -40,12 +40,16 @@ function colorCode() {
   timeContainer.each(function () {
     let timeBlockTime = $(this).attr("name")
 
-    if (timeBlockTime < 10) {
+    if (timeBlockTime < currentTime) {
+      
       $(this).attr("id", "past")
-    } else if (timeBlockTime === "10") {
+      
+    } else if (timeBlockTime === currentTime) {
       $(this).attr("id", "present")
-    } else if (timeBlockTime > 10) {
+      
+    } else if (timeBlockTime > currentTime) {
       $(this).attr("id", "future")
+      
     }
   })
 }
