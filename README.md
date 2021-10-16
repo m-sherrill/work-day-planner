@@ -10,7 +10,10 @@ Create a simple work day calendar which shows normal business hours. The user sh
 - HTML
 - CSS
 - JS
+
+With Help From
 - Jquery
+- Bootstrap
 
 ## Link to GitHub main project page
 
