@@ -8,8 +8,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -17,123 +15,32 @@
 </head>
 
 <body>
-  <header class="jumbotron" id="jumbotron">
+  <header class="jumbotron">
     <h1 class="display-3">Daily Planner</h1>
     <h3>A simple tracker to plan out your day</h3>
     <p class="lead" id="display-date"></p>
   </header>
   <main>
     <div class="container">
-      <!-- Key Row -->
       <div class="row">
-        <button id="clear-day">New Day! Clear all.</button>
-      </div>
-      <!-- row 8am -->
-      <div class="row">
-        <div class="col-2 time" name="08">
-          8 AM
+        <div class="col-12" id="clear-day-col">
+          <button id="clear-day">It is a New Day! Clear all.</button>
         </div>
-        <div class="input-container col-7"><textarea class="description" id="hour8" placeholder="Write in your plan here..."></textarea></div>
-        <div class="col-3" id="save-container"><button class="save-button" name="8am-btn"><img
-              src="assets/images/save.png"></button> <button class="clear-button" name="8am-btn"><img
-              src="assets/images/clear.png"></button></div>
       </div>
-      <!-- row 9am -->
-      <div class="row">
-        <div class="col-2 time" name="09">
-          9 AM
-        </div>
-        <div class="input-container col-7"><textarea class="description" id="hour9" placeholder="Write in your plan here..."></textarea></div>
-        <div class="col-3" id="save-container"> <button class="save-button" name="9am-btn"><img
-              src="assets/images/save.png"></button> <button class="clear-button" name="9am-btn"><img
-              src="assets/images/clear.png"></button></div>
-      </div>
-      <!-- row 10am -->
-      <div class="row">
-        <div class="col-2 time" name="10">
-          10 AM
-        </div>
-        <div class="input-container col-7"><textarea class="description" id="hour10" placeholder="Write in your plan here..."></textarea></div>
-        <div class="col-3" id="save-container"><button class="save-button" name="10am-btn"><img
-              src="assets/images/save.png"></button> <button class="clear-button" name="10am-btn"><img
-              src="assets/images/clear.png"></button></div>
-      </div>
-      <!-- row 11am -->
-      <div class="row">
-        <div class="col-2 time" name="11">
-          11 AM
-        </div>
-        <div class="input-container col-7"><textarea class="description" id="hour11" placeholder="Write in your plan here..."></textarea></div>
-        <div class="col-3" id="save-container"><button class="save-button" name="11am-btn"><img
-              src="assets/images/save.png"></button> <button class="clear-button" name="11am-btn"><img
-              src="assets/images/clear.png"></button></div>
-      </div>
-      <!-- row 12pm -->
-      <div class="row">
-        <div class="col-2 time" name="12">
-          12 PM
-        </div>
-        <div class="input-container col-7"><textarea class="description" id="hour12" placeholder="Write in your plan here..."></textarea></div>
-        <div class="col-3" id="save-container"><button class="save-button" name="12pm-btn"><img
-              src="assets/images/save.png"></button> <button class="clear-button" name="12pm-btn"><img
-              src="assets/images/clear.png"></button></div>
-      </div>
-      <!-- row 1pm -->
-      <div class="row">
-        <div class="col-2 time" name="13">
-          1 PM
-        </div>
-        <div class="input-container col-7"><textarea class="description" id="hour13" placeholder="Write in your plan here..."></textarea></div>
-        <div class="col-3" id="save-container"><button class="save-button" name="1pm-btn"><img
-              src="assets/images/save.png"></button> <button class="clear-button" name="1pm-btn"><img
-              src="assets/images/clear.png"></button></div>
-      </div>
-      <!-- row 2pm -->
-      <div class="row">
-        <div class="col-2 time" name="14">
-          2 PM
-        </div>
-        <div class="input-container col-7"><textarea class="description" id="hour14" placeholder="Write in your plan here..."></textarea></div>
-        <div class="col-3" id="save-container"><button class="save-button" name="2pm-btn"><img
-              src="assets/images/save.png"></button> <button class="clear-button" name="2pm-btn"><img
-              src="assets/images/clear.png"></button></div>
-      </div>
-      <!-- row 3pm-->
-      <div class="row">
-        <div class="col-2 time" name="15">
-          3 PM
-        </div>
-        <div class="input-container col-7"><textarea class="description" id="hour15" placeholder="Write in your plan here..."></textarea></div>
-        <div class="col-3" id="save-container"><button class="save-button" name="3pm-btn"><img
-              src="assets/images/save.png"></button> <button class="clear-button" name="3pm-btn"><img
-              src="assets/images/clear.png"></button></div>
-      </div>
-      <!-- row 4pm -->
-      <div class="row">
-        <div class="col-2 time" name="16">
-          4 PM
-        </div>
-        <div class="input-container col-7"><textarea class="description" id="hour16" placeholder="Write in your plan here..."></textarea></div>
-        <div class="col-3" id="save-container"><button class="save-button" name="4pm-btn"><img
-              src="assets/images/save.png"></button> <button class="clear-button" name="4pm-btn"><img
-              src="assets/images/clear.png"></button></div>
-      </div>
-      <!-- row 5pm -->
-      <div class="row">
-        <div class="col-2 time" name="17">
-          5 PM
-        </div>
-        <div class="input-container col-7"><textarea class="description" id="hour17" placeholder="Write in your plan here..."></textarea></div>
-        <div class="col-3" id="save-container"><button class="save-button" name="5pm-btn"><img
-              src="assets/images/save.png"></button> <button class="clear-button" name="5pm-btn"><img
-              src="assets/images/clear.png"></button></div>
-      </div>
+
+      <!-- Time container divs will appear below, generated from JS  -->
+
     </div>
 
   </main>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <script src="assets/js/script.js"></script>
+  <script src="assets/js/script1.js"></script>
+
+  <footer>
+    <a href="https://icons8.com/icon/42333/save">Save</a> and <a href="https://icons8.com/icon/44096/delete">Delete</a>
+    icons by icons8
+  </footer>
 </body>
 
 </html>
