@@ -21,7 +21,7 @@ With Help From
 
 ## Link to Deployed Application
 
-[Live Depoyed Link](https://m-sherrill.github.io/work-day-planner/)
+[Live Deployed Link](https://m-sherrill.github.io/work-day-planner/)
 
 ## Screenshots of Finished Product
 
