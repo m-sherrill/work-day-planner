@@ -25,16 +25,13 @@ let inputContainer = $(".input-container")
 let description = $(".description")
 
 // Putting the local storage data on the page
-$("#hour08").val(localStorage.getItem("08-btn"))
-$("#hour09").val(localStorage.getItem("09-btn"))
-$("#hour10").val(localStorage.getItem("10-btn"))
-$("#hour11").val(localStorage.getItem("11-btn"))
-$("#hour12").val(localStorage.getItem("12-btn"))
-$("#hour13").val(localStorage.getItem("13-btn"))
-$("#hour14").val(localStorage.getItem("14-btn"))
-$("#hour15").val(localStorage.getItem("15-btn"))
-$("#hour16").val(localStorage.getItem("16-btn"))
-$("#hour17").val(localStorage.getItem("17-btn"))
+function populateDesc() {
+  for (let i = 0; i < hours.length; i++) {
+    $("#hour" + hoursShort[i]).val(localStorage.getItem(hoursShort[i] + "-btn"))
+  }
+}
+
+populateDesc()
 
 // Color Coding Function
 function colorCode() {
