@@ -14,7 +14,7 @@ function generateHTML() {
   for (let i = 0; i < hours.length; i++) {
 
     let htmlBlock = `<div class="row"><div class="col-2 time" name="${hoursShort[i]}">${hours[i]}</div><div class="input-container col-7"><textarea class="description" id="hour${hoursShort[i]}" placeholder="Write in your plan here..."></textarea></div><div class="col-3" id="save-container"><button class="save-button" alt="save button" name="${hoursShort[i]}-btn"><img src="assets/images/save.png"></button> <button class="clear-button" alt="Clear Button" name="${hoursShort[i]}-btn"><img src="assets/images/clear.png"></button></div></div>`
-    
+
     $(".container").append(htmlBlock)
   }
 }
@@ -59,9 +59,6 @@ function colorCode() {
     } else if (timeBlockTime > currentTime) {
       $(this).attr("id", "future")
     }
-
-    console.log(timeBlockTime)
-    console.log(currentTime)
   })
 }
 
