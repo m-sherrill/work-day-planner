@@ -41,12 +41,12 @@ $("#hour16").val(localStorage.getItem("16-btn"))
 $("#hour17").val(localStorage.getItem("17-btn"))
 
 // Launching the color coding function
-colorCode()
+
 
 
 // Color Coding Function
 function colorCode() {
-  let currentTime = moment().format('H')
+  let currentTime = moment().format('HH')
   let timeContainer = $(".time")
 
   timeContainer.each(function () {
@@ -59,9 +59,13 @@ function colorCode() {
     } else if (timeBlockTime > currentTime) {
       $(this).attr("id", "future")
     }
+
+    console.log(timeBlockTime)
+    console.log(currentTime)
   })
 }
 
+colorCode()
 
 // Save Button to add input to local storage
 saveButton.on('click', function () {
