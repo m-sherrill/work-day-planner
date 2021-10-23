@@ -25,8 +25,6 @@ With Help From
 
 ## Screenshots of Finished Product
 
-### Application before Password
-
 ![Screenshot of application](assets/images/screenshot.jpg)
 
 
